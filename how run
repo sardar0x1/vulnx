@@ -1,0 +1,13 @@
+step 1 
+
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+---------------------------------
+step 2
+export FLASK_APP=run.py
+flask db init
+flask db migrate -m "Initial migration."
+flask db upgrade
+celery -A app.celery worker --loglevel=info
+flask run
