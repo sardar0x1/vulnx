@@ -1,0 +1,12 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Login
+Flask-Cors
+celery
+redis
+python-dotenv
+torch
+transformers
+accelerate
+werkzeug
